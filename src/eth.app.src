@@ -1,0 +1,21 @@
+{application, eth,
+ [{description, "Ethereum node JSONRPC client"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {mod, { eth_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    crypto,
+    keccak,
+    ecrecover,
+    lager,
+    gun
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
